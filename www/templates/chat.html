@@ -1,0 +1,25 @@
+<ion-view style="">
+  <ion-header-bar class="bar-dark" style="height: 60px">
+    <div class="row">
+      <div class="col" ng-click="goBack()">Back</div>
+      <div class="col">
+        <img ng-src="{{dealership.logo_url}}" style="margin-left:auto; margin-right:auto; display:block;" height="40px" height="40px" alt="">
+      </div>
+
+    <div class="col"></div>
+  </div>
+  </ion-header-bar>
+  <ion-content style="margin-top:20px">
+  </ion-content>
+
+  <ion-footer-bar keyboard-attach style="height: 55px; padding:0; background-color: #444;">
+      <div class="button-bar" style="padding: 8px; padding-top:1px;">
+        <div class="message-item item-divider" style="width:100%; margin-bottom: 0; background-color: #444;">
+          <button class="button button-small button-positive" style="float:right; max-height: 35px;background: #34a2dab3;" ng-click="sendTextMessage(text)">Send</button>
+          <div style="overflow: hidden; padding-right: .5em;">
+            <input type="text" ng-model="text" style="width: 100%; color:#212121" placeholder="Type message"/>
+          </div>
+        </div>
+      </div>
+  </ion-footer-bar>
+</ion-view>
